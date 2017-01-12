@@ -145,16 +145,63 @@ h6 {
 
 #logo {
     float:left;
-    font-size: 5rem;
+    font-size: 3rem;
     line-height: 1.2;
 }
 
 #menu{
     float:left;
-    margin-left: 20rem;
+    margin-left: 5rem;
     font-size: 2rem;
     line-height: 1.2;
 }
+
+#wrapper_header{
+    margin-top: 6rem;
+    margin-left: 6rem;    
+    margin-bottom: 6rem;
+    height: 12rem;
+
+}
+
+.menu-item a{
+    padding-left: 0rem;
+    -webkit-transition: padding-left 0.3s, color 0.3s; 
+    transition: padding-left 0.3s, color 0.3s;
+    transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+
+}
+.menu-item a:hover{
+
+    padding-left: 1.5rem;
+    color: pink;
+    
+}
+/**kontakt**/
+#menu-item-54 a:hover{
+    color: lightblue;
+    
+}
+
+/**tmsecomix**/
+#menu-item-51 a:hover{
+    color: #1eb6a7;
+    
+}
+
+/**kazdydenjekrasny**/
+#menu-item-53 a:hover{
+    color: #ffca0b;
+    
+}
+
+/**linkedin**/
+#menu-item-10 a:hover{
+    color: #0278b6;
+    
+}
+
 
 /** 4.0 Navigation */
 /** 4.1 Links */
@@ -162,3 +209,178 @@ a{
     text-decoration: none;
     color:#c4c4c4;
 }
+
+
+/** content*/
+ #main{
+    clear:both;
+
+ }
+
+.post_home .entry-header{
+    
+
+ }
+
+.post_home {
+    width:100%;
+    float: left;
+    /**repairs glich with picture moving slightly on hover**/
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    transform: rotate(0);
+ }
+
+.post_home_mouseover{
+}
+.post_home img{
+    width:100%;
+    height: auto;
+    float: left;
+     -webkit-transition: opacity 0.5s; 
+    transition: opacity 0.5s;
+    transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    /**repairs glich with picture moving slightly on hover**/
+    -webkit-backface-visibility: hidden;
+ }
+
+
+
+  .post_home img:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50); 
+
+    -webkit-backface-visibility: hidden;
+
+ }
+
+  .entry-header{
+    width: 100%;
+    height: 12rem;
+    background-color: #eaeaea;
+ }
+
+ .entry-title{
+    font-size: 3rem;
+    margin-top: 3.5rem;
+    margin-left: 6rem;
+    color: #666666;
+    float: left;
+ }
+
+ .entry-content{
+    width:100%;    
+    margin: auto;
+ }
+
+  .entry-content img{
+    width:100%; 
+    height: auto;   
+    margin: auto;
+ }
+
+.post-categories li{
+    float:left;
+ }
+
+  .post_category{
+    float:left;
+    margin-top: 3.5rem;
+ }
+
+#category_3{
+    background-image: url(images/code.svg);
+    width: 5rem;
+    height: 5rem;
+    color: transparent;
+    margin-left: 3rem;
+    text-align: center;
+     text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+ }
+
+ #category_5{
+    background-image: url(images/UX.svg);
+    width: 5rem;
+    height: 5rem;
+    color: transparent;
+    margin-left: 3rem;
+    text-align: center;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+ }
+
+ #category_4{
+    background-image: url(images/design.svg);
+    width: 5rem;
+    height: 5rem;
+    color: transparent;
+    margin-left: 3rem;
+    text-align: center;
+        text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+ }
+
+/* This applies from 800px onwards----------------------------------------------------------------*/
+@media only screen and (min-width: 800px){
+/** 3.0 Header */
+
+#logo {
+    font-size: 5rem;
+}
+
+#menu{
+    margin-left: 12rem;
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+/** content*/
+ 
+.post_home .entry-header{
+ }
+
+.post_home {
+    width:33.3%;
+    float: left;
+ }
+
+ .entry-content{
+    width:800px;    
+    margin: auto;
+ }
+
+
+/* This applies from 1200px onwards----------------------------------------------------------------*/
+@media only screen and (min-width: 1200px){
+/** 3.0 Header */
+
+
+/** content*/
+
+.post_home {
+    width:25%;
+ }
+
+ .entry-content{
+    width:1000px; 
+ }
+
+ /* This applies from 1600px onwards----------------------------------------------------------------*/
+@media only screen and (min-width: 1600px){
+/** 3.0 Header */
+
+
+/** content*/
+
+.post_home {
+    width:20%;
+ }
+
+ .entry-content{
+    width:1000px; 
+ }

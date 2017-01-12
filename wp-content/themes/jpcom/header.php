@@ -34,5 +34,5 @@
 
 
 <div id="menu"><div id="pages"><?php wp_nav_menu(); ?></div></div>
-</div ><!--wrapper-->
+</div ><!--wrapper_header-->
 <div id="main"><!--main-->

@@ -13,7 +13,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php
 		// Post thumbnail.
-		//twentyfifteen_post_thumbnail();
+		//the_post_thumbnail();
 	?>
 
 	<header class="entry-header">
@@ -24,6 +24,9 @@
 				the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' );
 			endif;
 		?>
+		<div class="post_category">
+		    <?php echo jpcom_get_the_category_list(); ?>
+		</div>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">

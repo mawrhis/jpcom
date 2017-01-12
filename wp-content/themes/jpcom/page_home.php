@@ -8,7 +8,10 @@
  * e.g., it puts together the home page when no home.php file exists.
  *
  * Learn more: {@link https://codex.wordpress.org/Template_Hierarchy}
- *
+ *<?php
+
+Template Name: Domu Template
+
  * @package WordPress
  * @subpackage jpcom
  * @since jpcom 1.0
