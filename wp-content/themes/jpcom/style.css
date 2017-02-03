@@ -1,386 +1,337 @@
-/**
- * Table of Contents
- *
- * 1.0 - Reset
- * 2.0 - Typography
- * 3.0 - Header
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
- */
-/**
- * 1.0 - Reset
- *
- * Resetting and rebuilding styles have been helped along thanks to the fine
- * work of Eric Meyer, Nicolas Gallagher, Jonathan Neal, and Blueprint.
- */
-
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
-    border: 0;
-    font-family: inherit;
-    font-size: 100%;
-    font-style: inherit;
-    font-weight: inherit;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
     margin: 0;
-    outline: 0;
     padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
     vertical-align: baseline;
 }
-
-html {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    font-size: 62.5%;
-    overflow-y: scroll;
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-}
-
-*,
-*:before,
-*:after {
-    -webkit-box-sizing: inherit;
-    -moz-box-sizing: inherit;
-    box-sizing: inherit;
-}
-
-body {
-    background: #fff;
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-main,
-nav,
-section {
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
     display: block;
 }
-
-ol,
-ul {
+body {
+    line-height: 1;
+}
+ol, ul {
     list-style: none;
 }
-
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
 table {
-    border-collapse: separate;
+    border-collapse: collapse;
     border-spacing: 0;
 }
 
-caption,
-th,
-td {
-    font-weight: normal;
-    text-align: left;
+/**end of reset**/
+
+body{
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.2rem;
+	font-weight: 300;
 }
 
-fieldset {
-    min-width: inherit;
+header{
+	width:100%;
+	clear: both;
+	text-align: center;
 }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: "";
+h1{
+	font-family: 'Lobster', cursive;
+	font-size: 1.9rem;
+	text-align: center;
+	margin: 1rem;
+
+	color:#E94E4A;
 }
 
-blockquote,
-q {
-    -webkit-hyphens: none;
-    -moz-hyphens: none;
-    -ms-hyphens: none;
-    hyphens: none;
-    quotes: none;
+h2{
+	font-family: 'Suez One', serif;
+	font-size: 2.3rem;
+	text-align: center;
 }
 
-a:focus {
-    outline: 2px solid #c1c1c1;
-    outline: 2px solid rgba(51, 51, 51, 0.3);
+h3{
+	font-family: 'Suez One', serif;
+	font-size: 1.8rem;
+	text-align: center;
+	color: #7F7F7F;
 }
 
-a:hover,
-a:active {
-    outline: 0;
-}
-
-a img {
-    border: 0;
-}
-
-
-/** Typography */
-
-body,
-button,
-input,
-select,
-textarea {
-    color: #333;
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    font-size: 1.5rem;
-    line-height: 1.6;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    clear: both;
-    font-weight: 700;
-}
-
-#name {
-    color: #666666;
-    font-weight: 400;
-}
-
-/** 3.0 Header */
-
-#logo {
-    float:left;
-    font-size: 3rem;
-    line-height: 1.2;
-}
-
-#menu{
-    float:left;
-    margin-left: 5rem;
-    font-size: 2rem;
-    line-height: 1.2;
-}
-
-#wrapper_header{
-    margin-top: 6rem;
-    margin-left: 6rem;    
-    margin-bottom: 6rem;
-    height: 12rem;
+h4{
+	font-family: 'Roboto', sans-serif;
 
 }
 
-.menu-item a{
-    padding-left: 0rem;
-    -webkit-transition: padding-left 0.3s, color 0.3s; 
-    transition: padding-left 0.3s, color 0.3s;
-    transition-timing-function: ease-in-out;
-    -webkit-transition-timing-function: ease-in-out;
-
-}
-.menu-item a:hover{
-
-    padding-left: 1.5rem;
-    color: pink;
-    
-}
-/**kontakt**/
-#menu-item-54 a:hover{
-    color: lightblue;
-    
+nav{
+	display: none;
 }
 
-/**tmsecomix**/
-#menu-item-51 a:hover{
-    color: #1eb6a7;
-    
+red{
+	color:#E94E4A;
 }
 
-/**kazdydenjekrasny**/
-#menu-item-53 a:hover{
-    color: #ffca0b;
-    
+.logo{
+	margin-top: 2rem;
+	margin-left: auto;
+	margin-right: auto;
+	display: inline-block;
 }
 
-/**linkedin**/
-#menu-item-10 a:hover{
-    color: #0278b6;
-    
+.logo-text{
+	padding:0.6rem;
+	float:right;
+}
+
+.logo-image{
+width:5rem;
+height: auto;
+	float:right;
+}
+
+.logo-image:after{
+	clear:both;
+}
+
+main{
+	width: 100%;
+}
+.main-inner {
+	margin-top: 4rem;
+}
+
+#intro{
+	font-family: 'Lobster', cursive;
+	font-size: 1.9rem;
+}
+
+.money{
+	color:#E94E4A;
+}
+
+.section{
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
+	margin-bottom: 8rem;
+	height:100vh;
+}
+
+.inner-section{
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
+}
+
+.section:nth-child(1){
+	margin-bottom:-7rem;
+}
+.section:nth-child(2){
+	margin-bottom:0rem;
+	margin-left: 0rem;
+	margin-right: 0rem;
+}
+.section:nth-child(3){
+	margin-top: 10rem;
+	height:50vh;
 }
 
 
-/** 4.0 Navigation */
-/** 4.1 Links */
-a{
-    text-decoration: none;
-    color:#c4c4c4;
+#sky{
+	background-color: #E2E2E2;
+	padding-bottom: 12rem;
+	position: relative;
+}
+
+#sky::before{
+	content: ".";
+	width: 100%;
+    background-image: url(./images/sky.svg);
+    height: 6rem;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+#trees{
+}
+.wood-clouds{
+	position:absolute;
+	width:100%;
+	bottom: -3rem;
+
+}
+#trees{
+
+    position: relative;
+}
+
+#clouds{
+	position: relative;
+	top:2.5rem;
 }
 
 
-/** content*/
- #main{
-    clear:both;
-
- }
-
-.post_home .entry-header{
-    
-
- }
-
-.post_home {
-    width:100%;
-    float: left;
-    /**repairs glich with picture moving slightly on hover**/
-    -webkit-transform: rotate(0);
-    -moz-transform: rotate(0);
-    transform: rotate(0);
- }
-
-.post_home_mouseover{
+footer{
+	background-color:#E94E4A;
+	padding: 2rem; 
 }
-.post_home img{
-    width:100%;
-    height: auto;
-    float: left;
-     -webkit-transition: opacity 0.5s; 
-    transition: opacity 0.5s;
-    transition-timing-function: ease-in-out;
-    -webkit-transition-timing-function: ease-in-out;
-    /**repairs glich with picture moving slightly on hover**/
-    -webkit-backface-visibility: hidden;
- }
+
+button{
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+	padding-top:0.6rem;
+	padding-bottom:0.6rem;
+	padding-left:1.2rem;
+	width: 7rem;
+	padding-right:1.2rem;
+	border: solid 3px #E94E4A;
+	background-color: white;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.1rem;
+	color: #E94E4A; 
+	display: inline-block;
+}
+
+button:active{
+	background-color: #E94E4A;
+	color: white; 
+}
+
+button:focus{
+	outline:none; 
+}
+
+.contact-buttons{
+	text-align: center;
+}
+
+.contact-buttons button:nth-child(2){
+	margin-left:2rem;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* -------------------------------------------------------------------------------------------over 400-------------------------------------------------------------------------*/
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 400px){
+body{
+	font-size: 1.4rem;
+}
+
+h1{
+	font-size: 2.2rem;
+}
+
+h2{
+	font-size: 2.8rem;
+}
+
+h3{
+	font-size: 2.3rem;
+}
+
+h4{
+}
+
+.logo{
+}
+
+.logo-text{
+	padding:1rem;
+}
+
+.logo-image{
+width:6rem;
+}
+
+.section:nth-child(1){
+	margin-bottom:-15rem;
+}
+
+button{
+	padding-top:0.8rem;
+	padding-bottom:0.8rem;
+	width: 10rem;
+	border: solid 3px #E94E4A;
+	background-color: white;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.2rem;
+	color: #E94E4A; 
+	display: inline-block;
+}
+
+.main-inner {
+	margin-top: 6rem;
+}
+
+#intro{
+	font-size: 2.2rem;
+}
+
+.wood-clouds{
+	bottom: 0rem;
+
+}
 
 
 
-  .post_home img:hover {
-    opacity: 0.5;
-    filter: alpha(opacity=50); 
 
-    -webkit-backface-visibility: hidden;
+.section{
+	margin-bottom: 8rem;
+}
+}
 
- }
 
-  .entry-header{
-    width: 100%;
-    height: 12rem;
-    background-color: #eaeaea;
- }
 
- .entry-title{
-    font-size: 3rem;
-    margin-top: 3.5rem;
-    margin-left: 6rem;
-    color: #666666;
-    float: left;
- }
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* -------------------------------------------------------------------------------------------over 800-------------------------------------------------------------------------*/
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
- .entry-content{
-    width:100%;    
-    margin: auto;
- }
 
-  .entry-content img{
-    width:100%; 
-    height: auto;   
-    margin: auto;
- }
-
-.post-categories li{
-    float:left;
- }
-
-  .post_category{
-    float:left;
-    margin-top: 3.5rem;
- }
-
-#category_3{
-    background-image: url(images/code.svg);
-    width: 5rem;
-    height: 5rem;
-    color: transparent;
-    margin-left: 3rem;
-    text-align: center;
-     text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
- }
-
- #category_5{
-    background-image: url(images/UX.svg);
-    width: 5rem;
-    height: 5rem;
-    color: transparent;
-    margin-left: 3rem;
-    text-align: center;
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
- }
-
- #category_4{
-    background-image: url(images/design.svg);
-    width: 5rem;
-    height: 5rem;
-    color: transparent;
-    margin-left: 3rem;
-    text-align: center;
-        text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
- }
-
-/* This applies from 800px onwards----------------------------------------------------------------*/
 @media only screen and (min-width: 800px){
-/** 3.0 Header */
-
-#logo {
-    font-size: 5rem;
+body{
+	font-size: 1.6rem;
 }
 
-#menu{
-    margin-left: 12rem;
-    font-size: 2rem;
-    line-height: 1.2;
+h1{
+	font-size: 4rem;
 }
 
-/** content*/
- 
-.post_home .entry-header{
- }
+h2{
+	font-size: 3.6rem;
+}
 
-.post_home {
-    width:33.3%;
-    float: left;
- }
+h3{
+	font-size: 3rem;
+}
 
- .entry-content{
-    width:800px;    
-    margin: auto;
- }
-
-
-/* This applies from 1200px onwards----------------------------------------------------------------*/
-@media only screen and (min-width: 1200px){
-/** 3.0 Header */
-
-
-/** content*/
-
-.post_home {
-    width:25%;
- }
-
- .entry-content{
-    width:1000px; 
- }
-
- /* This applies from 1600px onwards----------------------------------------------------------------*/
-@media only screen and (min-width: 1600px){
-/** 3.0 Header */
-
-
-/** content*/
-
-.post_home {
-    width:20%;
- }
-
- .entry-content{
-    width:1000px; 
- }
+h4{
+}
+}

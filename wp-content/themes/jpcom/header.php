@@ -27,7 +27,7 @@
         <div id="logo">
           <a href="<?php $url = home_url();echo esc_url( $url );?>">
               <div id="name">Jirka Příhoda</div>
-              <div id="job">kodér a grafik</div>
+              <div id="job">internety</div>
           </a>
         </div>
     </div>
