@@ -1,11 +1,15 @@
+<!DOCTYPE html>
 <html>
 <head>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link href="https://fonts.googleapis.com/css?family=Lobster|Roboto:300,400|Suez+One&amp;subset=latin-ext" rel="stylesheet">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="./js/parallax.js"></script>
 </head>
 <body>
+	
 	<header>
 			<div class="logo">
 					<div class="logo-image">
@@ -18,10 +22,10 @@
 			</div>
 		<nav>
 			<ul>
-				<li><a href="./index.html#about-me">o mne</a></li>
-				<li><a href="./index.html#about-me">pro vas</a></li>
-				<li>portfolio</li>
-				<li>blog</li>
+				<li><a href="./index.html#about-me">o mně</a></li>
+				<li><a href="./index.html#about-me">pro vás</a></li>
+				<li><a href="">portfolio</a></li>
+				<li><a href="">blog</a></li>
 				<li><a href="./index.html#contact">kontakt</a></li>
 			</ul>
 		</nav>
@@ -36,7 +40,16 @@
 							s chutí a nadšením.<br>
 							<div class="money">Za peníze.</div>
 						</div>
+
+<div class="parallax-container-sky" data-parallax="scroll" data-image-src="./images/sky.svg" data-speed="1.1" data-z-index="-100" data-natural-width="100" data-natural-height="100"data-bleed="1150" data-position-y="900px" ></div>
+
+
+						<div id="sky-top"><img src="./images/sky.svg"></div>
 						<div class="section" id="sky">
+
+						
+						
+
 							<div class="inner-section" id="about-me">
 								<h1>Kdo jsem...</h1>
 								<p>Jmenuji se Jirka Příhoda. Narodil jsem se v Praze, chvíli jsem studoval architekturu, založil neúspěšný start-up, dva roky žil v Holandsku a baví mě kreslit obrázky, kreslit komiksy, vytvářet věci co se hýbou a učit se věci nové. </p>
@@ -51,11 +64,13 @@
 									Nakreslím grafiku nebo ilustraci, podle vašich přání.</p>
 							</div>	
 							<div class="wood-clouds">
-								<div id="clouds"><img src="./images/clouds.svg">
+								<div id="clouds"><img src="./images/clouds2.svg">
 								</div>							
-								<div id="trees"><img src="./images/wood.svg">
+								<div id="trees"><img src="./images/wood2.svg">
 								</div>
 								</div>
+							<div class="parallax-container" data-parallax="scroll" data-image-src="./images/clouds.svg" data-speed="2" data-natural-width="80" data-natural-height="100" data-z-index="50" data-bleed="500" data-position-y="100px" >
+							<div class="parallax-container" data-parallax="scroll" data-image-src="./images/wood.svg" data-natural-width="100" data-natural-height="100" data-bleed="300" data-speed="1.2" data-z-index="100" ></div></div>
 
 						</div>
 
@@ -63,10 +78,10 @@
 						<h1>Kontakt</h1>
 						<p>Prohlédněte si moje portfolio, přečtěte si co jsem napsal, nebo mě kontaktujte:</p>
 						<div class="contact-buttons">
-							<button type="button">Portfolio</button>
-							<button type="button">Blog</button>
+							<button type="button" id="portfolio-button">Portfolio</button>
+							<button type="button" id="blog-button">Blog</button>
 						</div>
-						<div class="contact-form">
+						<form class="contact-form">
 								<div class="contact-form-email">
 									<h4>e-mail</h4>
 									<input></input>
@@ -74,7 +89,9 @@
 								<div class="contact-form-text"></div>
 									<h4>text</h4>
 									<input></input>
-						</div>
+
+							<button type="button" id="send-form-button">odeslat</button>
+						</form>
 						</div>
 
 					</div>
@@ -82,6 +99,7 @@
 		
 	</content>
 	<footer>
+	<h1>Odkazy</h1>
 	<div id="links">
 			<ul>
 					<li>linked-in</li>
