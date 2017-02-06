@@ -10,13 +10,22 @@
  */
 ?>
 
-</div><!-- main -->
-<div id="footer">
-<div id="footer_text">
+	</content>
+	<footer>
+	
+	<h1>Odkazy</h1>
+	<div id="links">
+			<ul>
+					<li>linked-in</li>
+					<li>dribble</li>
+					<li>github</li>
+					<li>tmsecomix.com</li>
+					<li>kazdydenjekrasny.cz</li>
+			</ul>
+	</div>
+
 <?php wp_footer(); ?>
-</div><!-- footer text -->
-</div><!-- footer -->
-</div><!-- page -->
+	</footer>
 </body>
 </html>
 

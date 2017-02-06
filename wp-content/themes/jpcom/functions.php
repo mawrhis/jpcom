@@ -25,6 +25,32 @@
  * @since jpcom 1.0
  */
 
+add_action( 'init', 'create_post_type' );
+function create_post_type() {
+  register_post_type( 'jpcom_portfolio',
+    array(
+      'supports' => array('title', 'editor','thumbnail', 'custom-fields', 'excerpt'),
+      'labels' => array(
+        'name' => __( 'Portfolio' ),
+        'singular_name' => __( 'Portfolio item' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+      'taxonomies'  => array( 'category', 'post_tag' ),
+
+    )
+  );
+}
+
+
+
+function jpcom_scripts() {
+
+//hamburger menu
+wp_enqueue_script( 'wpb_slidepanel', get_template_directory_uri() . '/js/slidepanel.js', array('jquery'), false, true ); 
+}
+add_action( 'wp_enqueue_scripts', 'jpcom_scripts' );
+
 
 
 if ( function_exists( 'add_theme_support' ) ) { 
@@ -40,7 +66,7 @@ if ( function_exists( 'add_theme_support' ) ) {
 
 add_filter( 'post_thumbnail_html', 'my_post_image_html', 10, 3 );
 function my_post_image_html( $html, $post_id, $post_image_id ) {
-    $html = '<a href="' . get_permalink( $post_id ) . '" title="' . 
+    $html = '<a href="' . get_post_permalink( $post_id ) . '" title="' . 
         esc_attr( get_post_field( 'post_title', $post_id ) ) . '">' . $html . '</a>';
     return $html;
 }
@@ -133,3 +159,5 @@ function jpcom_get_the_category_list( $separator = '', $parents='', $post_id = f
      */
     return apply_filters( 'the_category', $thelist, $separator, $parents );
 }
+
+?>

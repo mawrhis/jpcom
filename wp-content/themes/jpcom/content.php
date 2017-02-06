@@ -5,8 +5,8 @@
  * Used for both single and index/archive/search.
  *
  * @package WordPress
- * @subpackage Twenty_Fifteen
- * @since Twenty Fifteen 1.0
+ * @subpackage jpcom
+ * @since jpcom 1.0
  */
 ?>
 
@@ -15,7 +15,7 @@
 		// Post thumbnail.
 		//the_post_thumbnail();
 	?>
-
+content.php
 	<header class="entry-header">
 		<?php
 			if ( is_single() ) :

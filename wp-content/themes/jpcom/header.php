@@ -13,26 +13,35 @@
 <head>
     <title><?php wp_title(); ?></title>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
-    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=latin-ext" rel="stylesheet">
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto:300,400|Suez+One&amp;subset=latin-ext" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/parallax.js"></script>
+
     <?php wp_head(); ?>
+
+
 </head>
 <body <?php body_class(); ?>>
 
-<div id="page" class="hfeed site">
-<div id="wrapper_header"><!--wrapper-->
-    <div id="header">
-        <div id="logo">
-          <a href="<?php $url = home_url();echo esc_url( $url );?>">
-              <div id="name">Jirka Příhoda</div>
-              <div id="job">internety</div>
-          </a>
-        </div>
-    </div>
+  <header>
+      <div class="logo">
+          <div class="logo-image">
+            <a href="<?php echo get_home_url(); ?>"> <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.svg"></a>
+          </div>
+          <div class="logo-text">
+            <h2>Příhoda</h2>
+            <h3>vítejte!</h3>
+          </div>
+      </div>
+    <nav>
+      <?php wp_nav_menu(); ?>
+    </nav>
+  </header>
 
 
-<div id="menu"><div id="pages"><?php wp_nav_menu(); ?></div></div>
-</div ><!--wrapper_header-->
-<div id="main"><!--main-->
+  <content>
+      <main>
