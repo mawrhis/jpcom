@@ -11,15 +11,20 @@
 ?>
 <article class="main-inner" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-
+<div class="main-inner-header">
     <header class="portfolio-header">
         <?php
 
                 the_title( '<h1 class="portfolio-title">', '</h1>' );
      
         ?>
-    </header><!-- .portfolio-header -->
 
+        <div class="portfolio-category">
+            <?php echo jpcom_get_the_category_list(); ?>
+        </div>
+
+    </header><!-- .portfolio-header -->
+</div>
 
 
     <div class="portfolio-content">

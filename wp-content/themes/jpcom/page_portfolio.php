@@ -37,6 +37,7 @@ get_header(); ?>
                 <div class="post_home">
                 <?php
                 the_post_thumbnail(   );
+                the_title( sprintf( '<div class="portfolio-title-home"><h4><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2></div>' ); 
                 ?>
                 </div>
                 <?php

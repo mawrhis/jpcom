@@ -34,7 +34,7 @@
           </div>
           <div class="logo-text">
             <h2>Příhoda</h2>
-            <h3>vítejte!</h3>
+            <h3>portfolio</h3>
           </div>
       </div>
     <nav>

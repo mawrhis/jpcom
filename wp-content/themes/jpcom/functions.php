@@ -66,7 +66,7 @@ if ( function_exists( 'add_theme_support' ) ) {
 
 add_filter( 'post_thumbnail_html', 'my_post_image_html', 10, 3 );
 function my_post_image_html( $html, $post_id, $post_image_id ) {
-    $html = '<a href="' . get_post_permalink( $post_id ) . '" title="' . 
+    $html = '<a href="' . get_post_permalink( $post_id ) . '"title="' . 
         esc_attr( get_post_field( 'post_title', $post_id ) ) . '">' . $html . '</a>';
     return $html;
 }
@@ -100,10 +100,10 @@ function jpcom_get_the_category_list( $separator = '', $parents='', $post_id = f
     $rel = ( is_object( $wp_rewrite ) && $wp_rewrite->using_permalinks() ) ? 'rel="category tag"' : 'rel="category"';
     $thelist = '';
     if ( '' == $separator ) {
-        $thelist .= '<ul class="post-categories">';
+        $thelist .= '<ul class="portfolio-categories">';
         foreach ( $categories as $category ) {            
             $cat_ID = get_cat_ID($category->name);
-            $thelist .= "\n\t<li title='$category->name' id ='category_$cat_ID'>";
+            $thelist .= "\n\t<li title='$category->name' class='portfolio-category-badge' id ='category_$cat_ID'>";
             switch ( strtolower( $parents ) ) {
                 case 'multiple':
                     if ( $category->parent )

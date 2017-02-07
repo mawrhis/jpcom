@@ -7,7 +7,7 @@ todo list
 
 * thumbnail images in portfolio - resize to right dimension, crop if necessary
 * js script to pass different subheaders in logo
-
+* filtering portfolio posts by categories
 
 
 * wordpress theme checklist

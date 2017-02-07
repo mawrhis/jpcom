@@ -63,7 +63,7 @@ get_header('landing'); ?>
 
                         <div class="section" id="contact">
                         <h1>Kontakt</h1>
-                        <p>Prohlédněte si moje portfolio, přečtěte si co jsem napsal, nebo mě kontaktujte:</p>
+                        <p>Prohlédněte si moje portfolio, přečtěte si co jsem napsal, nebo mě kontaktujte. Našli jste chybu, nebo si jen myslíte že by se dalo něco udělat lépe či jinak? Dejte mi vědět, konstruktivní kritiku vždzcky rád uslyším. </p>
                         <div class="contact-buttons">
                             <button type="button" id="portfolio-button">Portfolio</button>
                             <button type="button" id="blog-button">Blog</button>

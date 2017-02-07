@@ -12,7 +12,7 @@
 
 	</content>
 	<footer>
-	
+
 	<h1>Odkazy</h1>
 	<div id="links">
 			<ul>
@@ -22,6 +22,16 @@
 					<li>tmsecomix.com</li>
 					<li>kazdydenjekrasny.cz</li>
 			</ul>
+	</div>
+
+	<div id="sandbox">
+	tenhle web je pískoviště.
+
+	</div>
+
+	<div id="sandbox-mouseover">
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/sandbox.svg">
+		Tenhle web je pískoviště. Nikdy nebude hotový, pořád na něm něco upravuji, tvořím a učím se na něm nové věci. Pokud vás zajímají detaily, můžete se podívat na <a href="https://github.com/mawrhis/jpcom/blob/master/wp-content/themes/jpcom/todo.md">todo list</a>
 	</div>
 
 <?php wp_footer(); ?>
