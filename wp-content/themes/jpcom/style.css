@@ -97,12 +97,12 @@ h4{
 
 
 nav{
-	display: none;
+
 }
 
 nav a:visited{    
 	text-decoration: none;
-    color: #000;
+    color: #999;
 }
 
 nav a:hover{    
@@ -125,6 +125,11 @@ red{
 	margin-left: auto;
 	margin-right: auto;
 	display: inline-block;
+	height: auto;
+}
+
+.scale-header{
+	height:3rem;
 }
 
 .logo-text{
@@ -154,11 +159,30 @@ main{
 	margin-bottom:-7rem;
 	font-size: 1.9rem;
 	height:80vh;
+    animation-duration: 2s;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    animation-name: leftslide;
 }
+
+
+@-webkit-keyframes leftslide {
+  0%   { opacity: 0; padding-left:5rem;}
+  20% { opacity: 0.6;}
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes slide {
+  0%   { opacity: 0;}
+  20% { opacity: 0.6;}
+  100% { opacity: 1; }
+}
+
 
 .money{
 	color:#E94E4A;
 }
+
 
 .section{
 	margin-left: 1.5rem;
@@ -179,7 +203,7 @@ main{
 }
 #contact{
 	margin-top: 10rem;
-	height:50vh;
+	height:80vh;
 }
 
 
@@ -190,8 +214,6 @@ main{
 	width: 100%;
 	height:80vh;
 }
-
-
 
 #trees{
 }
@@ -356,6 +378,10 @@ textarea {
 .post_home {
     width:100%;
     float: left;
+    animation-duration: 2s;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    animation-name: slide;
     /**repairs glich with picture moving slightly on hover**/
     -webkit-transform: rotate(0);
     -moz-transform: rotate(0);
@@ -497,12 +523,12 @@ textarea {
 	font-size: 2rem;
 }
 
-#sandbox{
-	float:right;
-	position: relative;
-	bottom: 6rem;
-	right: 6rem;
 
+
+#sandbox {
+    float: right;
+    position: relative;
+    bottom: 0rem;
 }
 
 #sandbox-mouseover{
@@ -510,7 +536,7 @@ textarea {
     position: fixed;
     width: 15rem;
     bottom: 7rem;
-    right: 2rem;
+    right: 0.5rem;
     height: 15rem;
     float: right;
     background-color: #fff;
@@ -536,6 +562,115 @@ textarea {
     display: block;
     padding-bottom: 2rem;
 }
+
+#sky-top{
+	position: relative;
+	top:3rem;
+}
+
+/** toggle */
+
+.hamburger{
+	position: absolute;
+	top: 0.5rem;
+	right: 0.5rem;
+}
+.hamburger span {
+  background-color: black;
+  width: 30px;
+  height: 4px;
+  display: block;
+  border-radius: 2px;
+  position: relative;
+}
+
+.rotate_top {
+  transform: rotateZ(135deg) translateX(7px) translateY(-7px);
+  transition: ease-in-out 0.5s;
+  background-color: #E94E4A !important;
+}
+
+.rotate_middle {
+  transform: rotateZ(255deg) translateX(0px) translateY(0px);
+  transition: ease-in-out 0.7s;
+  background-color: transparent !important;
+}
+
+.rotate_bottom {
+  transform: rotateZ(-135deg) translateX(7px) translateY(7px);
+  transition: ease-in-out 0.5s;
+  background-color: #E94E4A !important;
+}
+
+.hamburger span:nth-child(1) {
+  top: 0px;
+  transition: ease-in-out 0.5s;
+}
+
+.hamburger span:nth-child(2) {
+  top: 6px;
+  transition: ease-in-out 0.5s;
+}
+
+.hamburger span:nth-child(3) {
+  top: 12px;
+  transition: ease-in-out 0.5s;
+}
+
+#popout li{
+    margin-top: 1rem;
+}
+
+/*toggle*/
+
+/** hamburger menu */
+
+
+#popout {
+    position: fixed;
+    height: 100%;
+    width: 250px;
+    background: rgba(256, 256, 256, 1);
+    color: white;
+    top: 0px;
+    left: -270px;
+    overflow:auto;
+    z-index: 1;
+
+    box-shadow: rgba(0, 0, 0, 0.05) 13px 0px 20px;
+}
+
+
+#toggle {
+    z-index: 1;
+    float: right;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    height:3rem;
+    width:3rem;
+}
+
+.nav-menu li { 
+    border-bottom:1px solid #eee; 
+    padding:20px;
+    width:100%;
+}
+
+.nav-menu li:hover { 
+    background:#CCC;
+}
+
+.nav-menu li a { 
+    color:#FFF;
+    text-decoration:none;
+    width:100%;
+}
+
+
+
+/** /hamburger menu */
+
 
 }
 
@@ -725,12 +860,12 @@ button{
 
 /* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/* -------------------------------------------------------------------------------------------over 800-------------------------------------------------------------------------*/
+/* -------------------------------------------------------------------------------------------over 900-------------------------------------------------------------------------*/
 /* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 
-@media only screen and (min-width: 800px){
+@media only screen and (min-width: 900px){
 
 body{
 	font-size: 1.6rem;
@@ -768,6 +903,24 @@ nav{
 	margin-left: auto;
 	margin-right: auto;
 }
+
+#popout {
+    position: initial;
+    height: initial;
+    width: initial;
+    background: initial;
+    background: initial;
+    color: initial;
+    top: initial;
+    left: initial;
+    overflow:initial;
+    box-shadow: initial;
+}
+
+#toggle {
+    display:none;
+}
+
 
 nav ul{display: inline-block;
 }
@@ -810,6 +963,18 @@ nav li{
 	width:750px;
 	margin-left: auto;
 	margin-right: auto;
+}
+#sandbox{
+	float:right;
+	position: relative;
+	bottom: 6rem;
+	right: 6rem;
+
+}
+
+#sandbox-mouseover{
+    bottom: 7rem;
+    right: 2rem;
 }
 
 .section:nth-child(1){
@@ -894,7 +1059,7 @@ footer{
 
 #contact{
 	padding-top: 5rem;
-	height: 30vh;
+	height: 100vh;
 }
 
 

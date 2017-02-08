@@ -21,6 +21,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/parallax.js"></script>
 
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jqueryeasing.js"></script>
+
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/scaleheader.js"></script>
     <?php wp_head(); ?>
 
 
@@ -36,15 +39,28 @@
             <h3>vítejte!</h3>
           </div>
       </div>
-    <nav>
-        <ul>
-        <li><a href="/jpcom#about-me">o mně</a></li>
-        <li><a href="/jpcom#about-me">pro vás</a></li>
-        <li><a href="/jpcom/portfolio">portfolio</a></li>
-        <li><a href="/jpcom/bloginfo">blog</a></li>
-        <li><a href="/jpcom#contact">kontakt</a></li>
-      </ul>
-    </nav>
+
+    <div id="toggle">
+        <div class="hamburger">
+
+          <span></span>
+          <span></span>
+          <span></span>
+
+        </div>
+    </div>
+    <div id="popout">
+        <nav>
+            <ul>
+            <li><a href="#about-me">o mně</a></li>
+            <li><a href="#about-me">pro vás</a></li>
+            <li><a href="/jpcom/portfolio">portfolio</a></li>
+            <li><a href="/jpcom/bloginfo">blog</a></li>
+            <li><a href="#contact">kontakt</a></li>
+          </ul>
+        </nav>
+    </div>
+
   </header>
 
 
