@@ -37,9 +37,20 @@
             <h3>portfolio</h3>
           </div>
       </div>
+   <div id="toggle">
+        <div class="hamburger">
+
+          <span></span>
+          <span></span>
+          <span></span>
+
+        </div>
+    </div>
+        <div id="popout">
     <nav>
       <?php wp_nav_menu(); ?>
     </nav>
+    </div>
   </header>
 
 

@@ -55,7 +55,7 @@
             <li><a href="#about-me">o mně</a></li>
             <li><a href="#about-me">pro vás</a></li>
             <li><a href="/jpcom/portfolio">portfolio</a></li>
-            <li><a href="/jpcom/bloginfo">blog</a></li>
+            <li><a href="/jpcom/blog">blog</a></li>
             <li><a href="#contact">kontakt</a></li>
           </ul>
         </nav>

@@ -15,13 +15,12 @@
 		// Post thumbnail.
 		//the_post_thumbnail();
 	?>
-content.php
 	<header class="entry-header">
 		<?php
 			if ( is_single() ) :
 				the_title( '<h1 class="entry-title">', '</h1>' );
 			else :
-				the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' );
+				the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' );
 			endif;
 		?>
 		<div class="post-category">
@@ -42,7 +41,7 @@ content.php
 				'after'       => '</div>',
 				'link_before' => '<span>',
 				'link_after'  => '</span>',
-				'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'jpcom' ) . ' </span>%',
+				'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'jpcom' ) . ' </span>',
 				'separator'   => '<span class="screen-reader-text">, </span>',
 			) );
 		?>

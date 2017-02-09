@@ -165,5 +165,22 @@ wp_enqueue_script( 'wpb_toggle', get_template_directory_uri() . '/js/smoothscrol
 add_action( 'wp_enqueue_scripts', 'jpcom_scripts' );
 
 
+//[quotation shortcode]
+function quote_func( $atts ){
+    $meta =  get_post_meta( get_the_ID(), "citace" ,true );
+    return '<div class="quotation"><h3>' . $meta . '</h3></div>' ;
+}
+function quote2_func( $atts ){
+    $meta =  get_post_meta( get_the_ID(), "citace2" ,true );
+    return '<div class="quotation_left"><h3>' . $meta . '</h3></div>' ;
+}
+function quote3_func( $atts ){
+    $meta =  get_post_meta( get_the_ID(), "citace3" ,true );
+    return '<div class="quotation"><h3>' . $meta . '</h3></div>' ;
+}
+add_shortcode( 'quote', 'quote_func' );
+add_shortcode( 'quote2', 'quote2_func' );
+add_shortcode( 'quote3', 'quote3_func' );
+
 
 ?>

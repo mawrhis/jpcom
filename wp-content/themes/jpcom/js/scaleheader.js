@@ -2,9 +2,9 @@
 $(document).scroll(function() {
     var y = $(this).scrollTop();
     if (y > 30) {
-      $('header').addClass('scale-header');
+      $('.logo').addClass('scale-header');
     } else {
-      $('header').removeClass('scale-header');
+      $('.logo').removeClass('scale-header');
     }
 }
   })(jQuery);
