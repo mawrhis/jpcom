@@ -15,6 +15,7 @@
  */
 
 get_header(); ?>
+<div class="main-inner">
         <?php if ( have_posts() ) : ?>
 
             <?php if ( is_home() && ! is_front_page() ) : ?>
@@ -51,5 +52,5 @@ get_header(); ?>
         endif;
         ?>
 
-
+</div>
 <?php get_footer(); ?>

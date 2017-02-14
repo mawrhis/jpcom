@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
+/* red color - #E94E4A */
 /* units: rem = 16px;*/
 
 html, body, div, span, applet, object, iframe,
@@ -31,7 +31,8 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 body {
-    line-height: 1;
+	font-size: 1.0rem;
+    line-height: 1.4rem;
 }
 ol, ul {
     list-style: none;
@@ -65,9 +66,10 @@ header{
 
 h1{
 	font-family: 'Lobster', cursive;
-	font-size: 1.9rem;
+	font-size: 2.5rem;
+	line-height: 2.5rem;
 	text-align: center;
-	margin: 1rem;
+	margin: 1.4rem;
 
 	color:#E94E4A;
 }
@@ -88,12 +90,14 @@ main{
 h2{
 	font-family: 'Suez One', serif;
 	font-size: 2.3rem;
+	line-height: 2.3rem;
 	text-align: center;
 }
 
 h3{
 	font-family: 'Suez One', serif;
 	font-size: 1.8rem;
+	line-height: 1.8rem;
 	text-align: center;
 	color: #7F7F7F;
 }
@@ -160,12 +164,15 @@ main{
 }
 .main-inner {
 	margin-top: 4rem;
+
+	margin-bottom: 4rem;
 }
 
 #intro{
 	font-family: 'Lobster', cursive;
 	margin-bottom:-7rem;
-	font-size: 1.9rem;
+	font-size: 2.2rem;
+	line-height: 2.2rem;
 	height:80vh;
     animation-duration: 2s;
     -webkit-animation-timing-function: ease;
@@ -190,6 +197,10 @@ main{
 	color:#E94E4A;
 }
 
+article{
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
 
 .section{
 	margin-left: 1.5rem;
@@ -421,11 +432,10 @@ textarea {
 
   .entry-header{
     width: 100%;
-    height: 12rem;
  }
 
  .entry-title{
-    margin-top: 3.5rem;
+    margin-top: 2rem;
     color: #000;
  }
 
@@ -445,7 +455,7 @@ textarea {
  }
 
   .portfolio-category{
-    margin-top: 1rem;
+    margin-top: 1.4rem;
     float: left
 
     
@@ -474,16 +484,17 @@ textarea {
 
 .post-navigation{
 	margin-bottom:3rem;
+	padding: 1.5rem;
 }
 #category_3{
     background-image: url(images/code.svg);
  }
 
- #category_5{
+ #category_4{
     background-image: url(images/UX.svg);
  }
 
- #category_4{
+ #category_5{
     background-image: url(images/design.svg);
  }
 
@@ -522,62 +533,88 @@ textarea {
     margin-bottom: 2rem;
 }
 
+.author-heading{
+	text-align: left;
+	font-size: 1.4rem;
+	padding-bottom: 0.7rem;
+	padding-left: 1.4rem;
+}
+
+.author-info{
+	margin-top: 1rem;
+	padding:1rem;
+	background-color: #E2E2E2;
+	box-sizing: border-box;
+
+}
+.author-avatar img{
+	width:6rem;
+	height: auto;
+	border-radius: 60px;
+	border: 5px solid #E2E2E2;
+}
+
+.author-avatar {
+	float:left;
+	margin-right: 1rem;
+}
+
+.author-title{
+	font-weight: 400;
+	padding-bottom: 0.5rem;
+}
+
+.author-description{
+	padding-top: 1.4rem;
+	padding-bottom: 1.4rem;
+}
+
+
 .post-navigation h2{
 	font-family: 'Roboto', sans-serif;
 	font-size: 2rem;
 }
 
 
-.quotation:before, .quotation_left:before{
+q:before{
 	content: open-quote;
-    font-size: 10rem;    
 	font-family: 'Suez One', serif;
 	color: #E94E4A ;
-	float: left;
-    position: relative;
-    bottom: 3rem;
-    padding: 1rem;
+	float:left;
 }
 
-.quotation:after, .quotation_left:after{
+q:after{
 	content: close-quote;
-    float: right;
-    font-size: 10rem;    
+	float: right; 
 	font-family: 'Suez One', serif;
 	color: #E94E4A ;
-    position: relative;
-    right: -5rem;
-    bottom: 4rem;
-    padding: 1rem;
+	float: right;
 }
 
-.quotation{
+q{
 	quotes: "“" "”" "‘" "’";
     float: right;
     width: 40%;
-    margin-top: 2rem;
-    margin-bottom: -9rem;
-    margin-left: 1rem;
     color: #000;
-
-    margin-right: -2rem;
+    padding-top: 1.6rem;
+    padding-right: 1.6rem;
+    padding-left: 1.6rem;
 }
 
-.quotation_left{
-	quotes: "“" "”" "‘" "’";
-    float: left;
-    width: 40%;
-    margin-top: 2rem;
-    margin-bottom: -9rem;
-    margin-right: 6rem;
-    color: #000;
 
-    margin-left: -6rem;
+#left{
+	float:left;
 }
 
-.quotation h3, .quotation_left h3{
+
+q h3, q h3{
     color: #000;
-    font-size: 2.6rem;
+}
+
+
+
+#category_1{
+	display: none;
 }
 
 
@@ -600,6 +637,7 @@ textarea {
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.10) 0px 12px 20px 0px;
     font-size: 1.2rem;
+    line-height: 1.4rem;
     text-align: center;
 
 }
@@ -617,6 +655,8 @@ textarea {
     margin-right: auto;
     display: block;
     padding-bottom: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
 }
 
 #sky-top{
@@ -727,102 +767,29 @@ textarea {
 
 /** /hamburger menu */
 
-
+.tag-blog{
+    background-color: #E2E2E2;
+    padding-top: 0.6rem;
+    color: #E94E4A;
+    text-decoration: none;
+    font-weight: 400;
+    padding-bottom: 0.6rem;
+    border-radius: 5px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: inline-block;
+    float: left;
+    margin-right: 1rem;
 }
 
-/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/* -------------------------------------------------------------------------------------------over 400-------------------------------------------------------------------------*/
-/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-@media only screen and (min-width: 400px){
-body{
-	font-size: 1.4rem;
+.tag-blog a{
+    color: red;
+    text-decoration: none;
+    font-weight: 400;
 }
 
-h1{
-	font-size: 2.2rem;
-}
-
-h2{
-	font-size: 2.8rem;
-}
-
-h3{
-	font-size: 2.3rem;
-}
-
-h4{
-}
-
-.logo{
-}
-
-.logo-text{
-	padding:1rem;
-}
-
-.logo-image{
-width:6rem;
-}
-
-.section:nth-child(1){
-	margin-bottom:-15rem;
-}
-
-button{
-	padding-top:0.8rem;
-	padding-bottom:0.8rem;
-	width: 10rem;
-	border: solid 3px #E94E4A;
-	background-color: white;
-	font-family: 'Roboto', sans-serif;
-	font-size: 1.2rem;
-	color: #E94E4A; 
+.tags-blog{
 	display: inline-block;
-}
-
-.link-portfolio a{
-	padding-top:0.8rem;
-	padding-bottom:0.8rem;
-	width: 10rem;
-	border: solid 3px #E94E4A;
-	background-color: white;
-	font-family: 'Roboto', sans-serif;
-	font-size: 1.2rem;
-	color: #E94E4A; 
-	display: inline-block;
-}
-
-.main-inner {
-	margin-top: 6rem;
-}
-
-#intro{
-	font-size: 2.2rem;
-}
-
-
-
-
-
-.section{
-	margin-bottom: 8rem;
-	margin-left: 2rem;
-	margin-right: 2rem;
-}
-
-.inner-section {
-    margin-left: 2rem;
-    margin-right: 2rem;
-}
-
-#sky-top{
-	position: relative;
-	top:5rem;
-}
-
 
 }
 
@@ -835,19 +802,24 @@ button{
 
 @media only screen and (min-width: 600px){
 body{
-	font-size: 1.6rem;
+	font-size: 1.4rem;
+	line-height: 2rem;
 }
 
 h1{
-	font-size: 2.5rem;
+	font-size: 3.4rem;
+	line-height: 3.4rem;
+	margin: 2.2rem;
 }
 
 h2{
 	font-size: 3.2rem;
+	line-height: 3.2rem;
 }
 
 h3{
 	font-size: 2.8rem;
+	line-height: 2.8rem;
 }
 
 h4{
@@ -887,15 +859,25 @@ button{
 
 .main-inner {
 	margin-top: 4rem;
+
+	margin-bottom: 4rem;
 }
 
 #intro{
 	font-size: 2.8rem;
+	line-height: 2.8rem;
 }
+ .portfolio-category-badge{
+    width: 3.4rem;
+    height: 3.4rem;
+    margin-left: 2rem;
 
+ }
 
+ .portfolio-category {
+margin-top: 2.2rem;
 
-
+ }
 
 .section{
 	margin-bottom: 8rem;
@@ -923,10 +905,6 @@ button{
 
 @media only screen and (min-width: 900px){
 
-body{
-	font-size: 1.6rem;
-}
-
 h1{
 	font-size: 4rem;
 	padding-top: 2rem;
@@ -935,10 +913,12 @@ h1{
 
 h2{
 	font-size: 3.6rem;
+	line-height: 3.6rem;
 }
 
 h3{
-	font-size: 3rem;
+	font-size: 2.8rem;
+	line-height: 2.8rem;
 }
 
 h4{
@@ -946,7 +926,7 @@ h4{
 
 
 article{
-	width:1000px;
+	width:800px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -957,6 +937,7 @@ width:8rem;
 
 #intro{
 	font-size: 4rem;
+	line-height: 4rem;
 }
 
 nav{
@@ -1003,6 +984,10 @@ nav li{
 	color: #E2E2E2;
 }
 
+.logo-text{
+	padding:2.2rem;
+}
+
 .nav-links{
 	display: inline-flex;
 	margin-top: 1rem;
@@ -1012,7 +997,8 @@ nav li{
 	margin-right: 2rem;
 }
 
-
+  .entry-header{
+ }
 
 .section{
 	width:750px;
@@ -1021,6 +1007,10 @@ nav li{
 	margin-right: auto;
 	height: 100vh;
 }
+
+.entry-title{
+    margin-top: 3.5rem;
+ }
 
 .inner-section{
 	width:750px;
@@ -1104,6 +1094,22 @@ button{
 }
 
 
+q{
+    width: 40%;
+    padding-top: 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+
+    padding-bottom: 2rem;
+}
+
+q h3, q h3{
+    font-size: 2.4rem;
+    text-align: left;
+}
+
+
+
 /** paralax */
 
 .page-footer{
@@ -1143,7 +1149,9 @@ display: none;
 
  }
    .portfolio-category{
-    margin-top: 3rem;
+    margin-top: 2.2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 
     
  }
@@ -1219,8 +1227,6 @@ display: none;
 }
 
 .author-description{
-	padding-top: 1.4rem;
-	height:6rem;
 }
 
 }
@@ -1234,26 +1240,6 @@ display: none;
 
 @media only screen and (min-width: 1200px){
 
-body{
-	font-size: 1.6rem;
-}
-
-h1{
-	font-size: 4rem;
-	padding-top: 2rem;
-	padding-bottom: 2rem;
-}
-
-h2{
-	font-size: 4rem;
-}
-
-h3{
-	font-size: 3.2rem;
-}
-
-h4{
-}
 
 .logo-image{
 width:10rem;
@@ -1299,6 +1285,14 @@ input {
     padding: 1rem;
     font-size: 1.4rem;
     border-width: 0px;
+}
+
+
+
+article{
+	width:1000px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 textarea {

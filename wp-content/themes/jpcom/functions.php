@@ -86,10 +86,10 @@ function jpcom_get_the_category_list( $separator = '', $parents='', $post_id = f
      */
     $categories = apply_filters( 'the_category_list', get_the_category( $post_id ), $post_id );
  
-    if ( empty( $categories ) ) {
+    //if ( empty( $categories ) ) {
         /** This filter is documented in wp-includes/category-template.php */
-        return apply_filters( 'the_category', __( 'Uncategorized' ), $separator, $parents );
-    }
+      //  return apply_filters( 'the_category', __( 'Uncategorized' ), $separator, $parents );
+    //}
  
     $rel = ( is_object( $wp_rewrite ) && $wp_rewrite->using_permalinks() ) ? 'rel="category tag"' : 'rel="category"';
     $thelist = '';
@@ -166,19 +166,19 @@ add_action( 'wp_enqueue_scripts', 'jpcom_scripts' );
 
 
 //[quotation shortcode]
-function quote_func( $atts ){
-    $meta =  get_post_meta( get_the_ID(), "citace" ,true );
-    return '<div class="quotation"><h3>' . $meta . '</h3></div>' ;
+function quote1_func( $atts ){
+    $meta =  get_post_meta( get_the_ID(), "quote1" ,true );
+    return '<h3><q>' . $meta . '</q></h3>' ;
 }
 function quote2_func( $atts ){
-    $meta =  get_post_meta( get_the_ID(), "citace2" ,true );
-    return '<div class="quotation_left"><h3>' . $meta . '</h3></div>' ;
+    $meta =  get_post_meta( get_the_ID(), "quote2" ,true );
+    return '<h3><q id="left">' . $meta . '</q></h3>' ;
 }
 function quote3_func( $atts ){
-    $meta =  get_post_meta( get_the_ID(), "citace3" ,true );
-    return '<div class="quotation"><h3>' . $meta . '</h3></div>' ;
+    $meta =  get_post_meta( get_the_ID(), "quote3" ,true );
+    return '<h3><q>' . $meta . '</q></h3>' ;
 }
-add_shortcode( 'quote', 'quote_func' );
+add_shortcode( 'quote1', 'quote1_func' );
 add_shortcode( 'quote2', 'quote2_func' );
 add_shortcode( 'quote3', 'quote3_func' );
 

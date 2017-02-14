@@ -9,7 +9,7 @@
  * @since jpcom 1.0
  */
 ?>
-
+	</main>
 	</content>
 	<footer class="page-footer">
 

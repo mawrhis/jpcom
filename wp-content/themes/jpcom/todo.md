@@ -5,10 +5,10 @@ todo list
 * single.php - blog post
 * single-portfolio.php - portfolio
 
-* navigation fixed
+* filtering portfolio posts by categories
+* navigation fixed allways visible
 * thumbnail images in portfolio - resize to right dimension, crop if necessary
 * js script to pass different subheaders in logo
-* filtering portfolio posts by categories
 * article, main-inner, entry-content css is basiacally the same, put every rule to article?
 
 
@@ -16,3 +16,6 @@ todo list
 * css file structure
 * php files structure
 * vzhurudolu checklist
+
+
+* angličtina?

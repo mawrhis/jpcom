@@ -46,6 +46,7 @@
 			) );
 		?>
 	</div><!-- .entry-content -->
+	<?php the_tags( '<ul class="tags-blog"><li class="tag-blog">', '</li><li class="tag-blog">', '</li class="tag-blog"></ul>' ); ?>
 
 	<?php
 		// Author bio.
