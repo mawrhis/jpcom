@@ -23,9 +23,11 @@ get_header('landing'); ?>
                         <div class="section" id="intro">
                             Vytvořím webové stránky,<br>
                             nakreslím grafiku,<br>
-                            nakóduji šablonu,<br>
-                            s chutí a nadšením.<br>
+                            nakóduji šablonu.<br>
+                            S chutí a nadšením.<br>
                             <div class="money">Za peníze.</div>
+
+                                                   
                         </div>
 
 <div class="parallax-container-sky" data-parallax="scroll" data-image-src="<?php echo get_stylesheet_directory_uri(); ?>/images/sky.svg" data-speed="1.2" data-z-index="-100" data-natural-width="100" data-natural-height="100" data-bleed="500" data-position-y="-300px" ></div>
@@ -38,18 +40,18 @@ get_header('landing'); ?>
                         
 
                             <div class="inner-section" id="about-me">
-                                <h1>Kdo jsem...</h1>
-                                <p>Jmenuji se Jirka Příhoda. Narodil jsem se v Praze, chvíli jsem studoval architekturu, založil neúspěšný start-up, dva roky žil v Holandsku a baví mě kreslit obrázky, kreslit komiksy, vytvářet věci co se hýbou a učit se věci nové. </p>
+                                <h1>Kdo jsem a co umím...</h1>
+                                <p>Jmenuji se Jirka Příhoda. Narodil jsem se v Praze, chvíli jsem studoval architekturu, založil neúspěšný start-up a dva roky žil a pracoval v Holandsku. Baví mě kreslit obrázky, kreslit komiksy, vytvářet věci co se hýbou a učit se věci nové. </p>
+                                <br>
+                                <p>Vytvořím vám <red><b>webovou stránku</b></red> postavenou na redakčním systému <red><b>wordpress</b></red>. Nakóduji šablonu v <red><b>HTML a CSS</b></red> podle vašeho návrhu nebo nakreslím <red><b>grafiku nebo ilustraci</b></red> , podle vašich přání.</p> Pro představu o mojí práci, si prohlédněte moje portfolio.
+
+
                             </div>  
 
-                            <div class="inner-section" id="services">
-                                <h1>S čím vám můžu pomoci...</h1>
-                                <p>Vytvořím vám webovou stránku postavenou na redakčním systému wordpress. O vašem webu s vámi budu mluvit a pomůžu vám ujasnit si, jaké bude nejlepší řešení. <br> <br>
-
-                                    Nakóduji šablonu v <red>HTML</red> a CSS podle vašeho návrhu.<br><br>
-
-                                    Nakreslím grafiku nebo ilustraci, podle vašich přání.</p>
-                            </div>  
+                             <div class="contact-buttons">
+                            <div class="button" id="portfolio-button"><a href="jiriprihoda.com/portfolio">Portfolio</a></div>
+                            <!-- <a href="jiriprihoda.com/blog"><div class="button" type="button" id="blog-button">Blog</div></a>-->
+                        </div>
                             <div class="wood-clouds">
                                 <div id="clouds"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/clouds2.svg">
                                 </div>                          
@@ -63,11 +65,7 @@ get_header('landing'); ?>
 
                         <div class="section" id="contact">
                         <h1>Kontakt</h1>
-                        <p>Prohlédněte si moje portfolio, přečtěte si co jsem napsal, nebo mě kontaktujte. Našli jste chybu, nebo si jen myslíte že by se dalo něco udělat lépe či jinak? Dejte mi vědět, konstruktivní kritiku vždzcky rád uslyším. </p>
-                        <div class="contact-buttons">
-                            <button type="button" id="portfolio-button">Portfolio</button>
-                            <button type="button" id="blog-button">Blog</button>
-                        </div>
+                        <p>Prohlédněte si moje portfolio, nebo mě kontaktujte. Našli jste chybu, nebo si jen myslíte že by se dalo něco udělat lépe či jinak? Dejte mi vědět, rád od vás uslyším. </p>
                         <div class="contact-form">
                                 <?php echo do_shortcode( '[pirate_forms]' ) ?> 
                         </div

@@ -74,10 +74,32 @@ h1{
 	color:#E94E4A;
 }
 
+a { 
+    color:#E94E4A;
+    text-decoration:none;
+    width:100%;
+}
+a:hover { 
+    color:#fff;
+}
+
+footer a { 
+    color:#000;
+    text-decoration:none;
+    width:100%;
+}
+
+footer a:hover { 
+    font-weight:400;
+}
+
 .page-footer h1{
 	color:#fff;
 }
 
+ul{
+	padding-left: 2rem;
+}
 main{
 
     animation-duration: 1s;
@@ -108,6 +130,121 @@ h4{
 }
 
 
+.entry-content ol, .entry-content ul {
+    list-style: disc;
+}
+
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+        white-space: nowrap;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}
+
+/* wordpress core */
+
 nav{
 
 }
@@ -126,6 +263,10 @@ nav a:hover{
 nav a{    
 	text-decoration: none;
     color: black;
+}
+
+strong, b {
+    font-weight: bold;
 }
 
 red{
@@ -161,11 +302,6 @@ height: auto;
 
 main{
 	width: 100%;
-}
-.main-inner {
-	margin-top: 4rem;
-
-	margin-bottom: 4rem;
 }
 
 #intro{
@@ -273,7 +409,27 @@ button{
 	display: inline-block;
 }
 
+.button{
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+	padding-top:0.6rem;
+	padding-bottom:0.6rem;
+	padding-left:1.2rem;
+	width: 7rem;
+	padding-right:1.2rem;
+	border: solid 3px #E94E4A;
+	background-color: white;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.1rem;
+	color: #E94E4A; 
+	display: inline-block;
+}
+
 button:active{
+	background-color: #E94E4A;
+	color: white; 
+}
+.button:active{
 	background-color: #E94E4A;
 	color: white; 
 }
@@ -281,10 +437,14 @@ button:active{
 button:focus{
 	outline:none; 
 }
+.button:focus{
+	outline:none; 
+}
 
 .contact-buttons{
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
     display: inline-block;
     width: 100%;
 }
@@ -302,7 +462,13 @@ button:focus{
 }
 
 #portfolio-button{
-	float:left;
+	background-color: transparent;
+	z-index: 100;
+	position: relative;
+}
+
+#portfolio-button:hover{
+	background-color: #E94E4A;
 }
 
 #blog-button{
@@ -317,7 +483,6 @@ button:focus{
 	padding-top:0.6rem;
 	padding-bottom:0.6rem;
 	padding-left:1.2rem;
-	width: 7rem;
 	padding-right:1.2rem;
 	border: solid 3px #E94E4A;
 	background-color: white;
@@ -442,10 +607,11 @@ textarea {
  .entry-content{
     width:100%;    
     margin: auto;
+    padding-bottom: 2rem;
  }
 
-  .entry-content img{
-    width:100%; 
+ .entry-content img{
+ 	max-width: 100%;
     height: auto;   
     margin: auto;
  }
@@ -780,12 +946,21 @@ q h3, q h3{
     display: inline-block;
     float: left;
     margin-right: 1rem;
+
+    margin-bottom: 1rem;
 }
 
 .tag-blog a{
     color: red;
     text-decoration: none;
     font-weight: 400;
+}
+
+.tags-blog-image{
+	height:3rem;
+	padding-right: 1rem;
+	margin-bottom: 1rem;
+
 }
 
 .tags-blog{
@@ -848,7 +1023,13 @@ button{
 	border: solid 3px #E94E4A;
 	font-size: 1.4rem;
 }
-
+.button{
+	padding-top:1rem;
+	padding-bottom:1rem;
+	width: 13rem;
+	border: solid 3px #E94E4A;
+	font-size: 1.4rem;
+}
 .link-portfolio a{
 	padding-top:1rem;
 	padding-bottom:1rem;
@@ -858,9 +1039,9 @@ button{
 }
 
 .main-inner {
-	margin-top: 4rem;
+	margin-top: 2rem;
 
-	margin-bottom: 4rem;
+	margin-bottom: 2rem;
 }
 
 #intro{
@@ -1046,6 +1227,13 @@ nav li{
 }
 
 button{
+	padding-top:1rem;
+	padding-bottom:1rem;
+	width: 20rem;
+	border: solid 3px #E94E4A;
+	font-size: 1.8rem;
+}
+.button{
 	padding-top:1rem;
 	padding-bottom:1rem;
 	width: 20rem;
@@ -1246,7 +1434,6 @@ width:10rem;
 }
 
 #sky{
-	padding-bottom: 14rem;
 }
 
 .section{
@@ -1264,12 +1451,22 @@ width:10rem;
 }
 
 button{
-	padding-top:1rem;
-	padding-bottom:1rem;
-	width: 25rem;
+	padding-top:0.5rem;
+	padding-bottom:0.5rem;
+	width: 20rem;
 	border: solid 3px #E94E4A;
 	font-size: 1.8rem;
 }
+.button{
+	padding-top:0.5rem;
+	padding-bottom:0.5rem;
+	width: 20rem;
+	border: solid 3px #E94E4A;
+	font-size: 1.8rem;
+}
+
+
+
 
 .link-portfolio a{
 	padding-top:1rem;
@@ -1351,6 +1548,7 @@ textarea {
 
  .entry-content{
     width:1000px; 
+
  }
 
  .portfolio-content{

@@ -46,6 +46,7 @@
 			) );
 		?>
 	</div><!-- .entry-content -->
+	<img alt="tags" class="tags-blog-image" src="http://localhost/jpcom/wp-content/themes/jpcom/images/tag.svg">
 	<?php the_tags( '<ul class="tags-blog"><li class="tag-blog">', '</li><li class="tag-blog">', '</li class="tag-blog"></ul>' ); ?>
 
 	<?php

@@ -11,7 +11,7 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js">
 <head>
-    <title><?php wp_title(); ?></title>
+    <title><?php wp_title(); ?><?php bloginfo('description'); ?></title>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
@@ -20,6 +20,8 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/parallax.js"></script>
+        <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jqueryeasing.js"></script>
+
 
     <?php wp_head(); ?>
 
@@ -34,7 +36,7 @@
           </div>
           <div class="logo-text">
             <h2>Příhoda</h2>
-            <h3>portfolio</h3>
+            <h3>tvoří weby</h3>
           </div>
       </div>
    <div id="toggle">

@@ -16,11 +16,11 @@
 	<h1>Odkazy</h1>
 	<div id="links">
 			<ul>
-					<li>linked-in</li>
-					<li>dribble</li>
-					<li>github</li>
-					<li>tmsecomix.com</li>
-					<li>kazdydenjekrasny.cz</li>
+					<li><a target="_blank" href="http://www.linkedin.com/in/jiriprihoda">linked-in</a></li>
+					<li><a target="_blank" href="http://www.dribbble.com/mawrhis">dribble</a></li>
+					<li><a target="_blank" href="http://www.github.com/mawrhis">github</a></li>
+					<li><a target="_blank" href="http://www.tmsecomix.com">tmsecomix.com</a></li>
+					<li><a target="_blank" href="http://www.kazdydenjekrasny.cz">kazdydenjekrasny.cz</a></li>
 			</ul>
 	</div>
 
